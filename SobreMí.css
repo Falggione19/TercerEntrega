@@ -1,0 +1,137 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+
+.grid-container{
+    width: 100%;
+    height: 200%;
+    margin: 0 auto;
+    background-color: darkcyan;
+
+    display: grid;
+
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    grid-template-rows: 0.5fr 0.5fr 0.2fr 3fr 0.2fr 3fr 0.2fr 2.5fr ;
+
+    grid-template-areas:'Header Header Header Header'
+                        'Nav Nav Nav Nav'
+                        'Article Article Article Article'
+                        'FilaImagenes1 FilaImagenes1 FilaImagenes1-2 FilaImagenes1-2'
+                        'Footer Footer Footer Footer';
+}
+
+@media (max-width: 550px) {
+    .grid-container{
+        grid-template-columns: 1fr;
+        grid-template-rows: 0.5fr 0.5fr 1fr 1fr 1fr 2fr;
+
+        grid-template-areas:'Header'
+                            'Nav'
+                            'Article'
+                            'FilaImagenes1'
+                            'FilaImagenes1-2'
+                            'Footer';
+    }
+}
+
+.Header{
+    grid-area: Header;
+    background-color: #D96F66;
+    color:#fccabd;
+    font-family: 'Dancing Script', cursive;
+    font-size: 450%;
+    text-align: center;
+}
+
+.Nav{
+    grid-area: Nav;
+    color:#fccabd;
+    background-color: #D96F66;
+    font-family: 'Dancing Script', cursive;
+    font-family: 'Manrope', sans-serif;
+    text-align: center;
+    text-decoration: none;
+
+}
+
+a:visited,a:active,a:link{
+    color:#fccabd;
+    text-decoration: none; 
+    list-style: none;
+}
+
+
+.Article{
+    grid-area: Article;
+    background-image: linear-gradient(45deg,rgb(250, 122, 229), rgb(244, 244, 134));
+}
+.UlSobreMi{
+    margin-left: 0.20%;
+}
+
+li{
+    margin-left: 20px;
+    font-family: 'Dancing Script', cursive;
+    font-family: 'Manrope', sans-serif;
+}
+
+.LiNav{
+    margin-left: 20px;
+    font-family: 'Dancing Script', cursive;
+    font-family: 'Manrope', sans-serif;
+    list-style: none;
+}
+
+.FilaImagenes1{
+    grid-area: FilaImagenes1;
+}
+
+.FilaImagenes1-2{
+    grid-area: FilaImagenes1-2;
+}
+
+.MartinaDecorando{
+    float: left;
+    width: 100%;
+    height: 100%;
+}
+
+.MartinadePie{
+    float:right;
+    width: 100%;
+    height: 100%;
+}
+
+
+.Footer{
+    grid-area: Footer;
+    background-color: #D96F66;
+    text-align: center;
+}
+
+h3,h4,.NuestrasRedes{
+    font-family: 'Dancing Script', cursive;
+    font-family: 'Manrope', sans-serif;
+    text-align:center;
+    color:#fccabd; 
+    margin: 10px 0px;
+}
+
+.Mail:visited,.Mail:active,.Mail:link,.IG:visited,.IG:active,.IG:link{
+    font-family: 'Dancing Script', cursive;
+    font-family: 'Manrope', sans-serif;
+    text-align:center;
+    color:#fccabd; 
+    text-decoration: none;
+}
+
+iframe{
+    width: 100%;
+}
+
+.form-pseudoclases *:required{
+border-color: #F2D7D0;
+}
+html{background-color:rgb(255, 255, 255);}
+
