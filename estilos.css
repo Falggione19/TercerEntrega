@@ -1,0 +1,301 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+
+.grid-container{
+    width: 100%;
+    height: 300%;
+    margin: 0 auto;
+    background-color: darkcyan;
+
+    display: grid;
+
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    grid-template-rows: 0.5fr 0.5fr 0.2fr 3fr 0.2fr 3fr 0.2fr 3fr 0.2fr 3fr 0.2fr  2.5fr ;
+
+    grid-template-areas:'Header Header Header Header' 
+                        'Nav Nav Nav Nav'
+                        'Productos Productos Productos Productos'
+                        'FilaImagenes1 FilaImagenes1 FilaImagenes1-2 FilaImagenes1-2'
+                        'SectionChocotortaconFrutilla SectionChocotortaconFrutilla SectionTortaCadbury SectionTortaCadbury'
+                        'FilaImagenes2 FilaImagenes2 FilaImagenes2-2 FilaImagenes2-2'
+                        'SectionTartaHavannet SectionTartaHavannet SectionTartadeFrutilla SectionTartadeFrutilla'
+                        'FilaImagenes3 FilaImagenes3 FilaImagenes3-2 FilaImagenes3-2'
+                        'SectionBalcarce SectionBalcarce SectionTartaBananaSplit SectionTartaBananaSplit'
+                        'FilaImagenes4 FilaImagenes4 FilaImagenes4-2 FilaImagenes4-2'
+                        'SectionCheescakeNewYork SectionCheescakeNewYork SectionCheescakedeDulcedeLeche SectionCheescakedeDulcedeLeche'
+                        'Footer Footer Footer Footer';
+}
+
+@media (max-width: 550px) {
+    .grid-container{
+    grid-template-columns: 1fr;
+    grid-template-rows: 0.5fr 0.5fr 0.2fr 3fr 0.2fr 3fr 0.2fr 3fr 0.2fr 3fr 0.2fr 3fr 0.2fr 3fr 0.2fr 2.5fr ;
+
+    grid-template-areas:'Header'
+                        'Nav'
+                        'Productos'
+                        'FilaImagenes1'
+                        'SectionChocotortaconFrutilla'
+                        'FilaImagenes1-2'
+                        'SectionTortaCadbury'
+                        'FilaImagenes2'
+                        'SectionTartaHavannet'
+                        'FilaImagenes2-2'
+                        'SectionTartadeFrutilla'
+                        'FilaImagenes3'
+                        'SectionBalcarce'
+                        'FilaImagenes3-2'
+                        'SectionTartaBananaSplit'
+                        'FilaImagenes4'
+                        'SectionCheescakeNewYork'
+                        'FilaImagenes4-2'
+                        'SectionCheescakedeDulcedeLeche'
+                        'Footer';
+    }
+}
+
+.Header{
+    grid-area: Header;
+    background-color: #D96F66;
+    color:#fccabd;
+    font-family: 'Dancing Script', cursive;
+    font-size: 450%;
+    text-align: center;
+}
+
+.Nav{
+    grid-area: Nav;
+    background-color: #D96F66;
+    float: right;
+    color:#fccabd;
+    text-decoration: none;
+    font-family: 'Dancing Script', cursive;
+    font-family: 'Manrope', sans-serif;
+    text-align: center;
+    list-style: none;
+}
+
+.Productos{
+    grid-area: Productos;
+    background-image: linear-gradient(45deg,rgb(250, 122, 229), rgb(244, 244, 134));;
+    font-family: 'Dancing Script', cursive;
+    font-family: 'Manrope', sans-serif;
+    text-align: center;
+    font-size: 150%;
+    color: #D96F66; 
+}
+
+.FilaImagenes1{
+    grid-area:FilaImagenes1;
+    background-color: blueviolet;
+}
+
+.FilaImagenes1-2{
+    grid-area:FilaImagenes1-2;
+    background-color: black;
+}
+
+.ChocotortaconFrutilla{
+    float: left;
+    width: 100%;
+    height: 100%;
+}
+
+.TortaCadbury{
+    float:right;
+    width: 100%;
+    height: 100%;
+}
+
+.SectionChocotortaconFrutilla{
+    grid-area: SectionChocotortaconFrutilla;
+    background-image: linear-gradient(45deg,rgb(250, 122, 229), rgb(244, 244, 134));
+    font-family: 'Dancing Script', cursive;
+    font-family: 'Manrope', sans-serif;
+    text-align: center;
+    font-size: 150%;
+    color: #D96F66; 
+}
+
+.SectionTortaCadbury{
+    grid-area: SectionTortaCadbury;
+    background-image: linear-gradient(45deg,rgb(250, 122, 229), rgb(244, 244, 134));
+    font-family: 'Dancing Script', cursive;
+    font-family: 'Manrope', sans-serif;
+    text-align: center;
+    font-size: 150%;
+    color: #D96F66; 
+}
+
+.FilaImagenes2{
+    grid-area: FilaImagenes2;
+    background-color: yellowgreen;
+}
+
+.FilaImagenes2-2{
+    grid-area: FilaImagenes2-2;
+
+}
+
+.TartaHavannet{
+    float: right;
+    width: 100%;
+    height: 100%;
+}
+
+.TartadeFrutilla{
+    float:left;
+    width: 100%;
+    height: 100%;
+}
+
+.SectionTartaHavannet{
+    grid-area: SectionTartaHavannet;
+    background-image: linear-gradient(45deg,rgb(250, 122, 229), rgb(244, 244, 134));
+    font-family: 'Dancing Script', cursive;
+    font-family: 'Manrope', sans-serif;
+    text-align: center;
+    font-size: 150%;
+    color: #D96F66; 
+}
+
+.SectionTartadeFrutilla{
+    grid-area: SectionTartadeFrutilla;
+    background-image: linear-gradient(45deg,rgb(250, 122, 229), rgb(244, 244, 134));
+    font-family: 'Dancing Script', cursive;
+    font-family: 'Manrope', sans-serif;
+    text-align: center;
+    font-size: 150%;
+    color: #D96F66; 
+}
+
+.FilaImagenes3{
+    grid-area:FilaImagenes3;
+    background-color: blueviolet;
+}
+
+.FilaImagenes3-2{
+    grid-area: FilaImagenes3-2;
+}
+
+.Balcarce{
+    float: left;
+    width: 100%;
+    height: 100%;
+}
+
+.TartaBananaSplit{
+    float:right;
+    width: 100%;
+    height: 100%;
+}
+
+.SectionBalcarce{
+    grid-area: SectionBalcarce;
+    background-image: linear-gradient(45deg,rgb(250, 122, 229), rgb(244, 244, 134));
+    font-family: 'Dancing Script', cursive;
+    font-family: 'Manrope', sans-serif;
+    text-align: center;
+    font-size: 150%;
+    color: #D96F66; 
+}
+
+.SectionTartaBananaSplit{
+    grid-area: SectionTartaBananaSplit;
+    background-image: linear-gradient(45deg,rgb(250, 122, 229), rgb(244, 244, 134));
+    font-family: 'Dancing Script', cursive;
+    font-family: 'Manrope', sans-serif;
+    text-align: center;
+    font-size: 150%;
+    color: #D96F66; 
+}
+
+.FilaImagenes4{
+    grid-area: FilaImagenes4;
+    background-color: yellowgreen;
+}
+
+.FilaImagenes4-2{
+    grid-area: FilaImagenes4-2;
+}
+
+.CheescakedeDulcedeLeche{
+    float: right;
+    width: 100%;
+    height: 100%;
+}
+
+.CheescakeNewYork{
+    float:left;
+    width: 100%;
+    height: 100%;
+}
+
+.SectionCheescakedeDulcedeLeche{
+    grid-area: SectionCheescakedeDulcedeLeche;
+    background-image: linear-gradient(45deg,rgb(250, 122, 229), rgb(244, 244, 134));
+    font-family: 'Dancing Script', cursive;
+    font-family: 'Manrope', sans-serif;
+    text-align: center;
+    font-size: 150%;
+    color: #D96F66; 
+}
+
+.SectionCheescakeNewYork{
+    grid-area: SectionCheescakeNewYork;
+    background-image: linear-gradient(45deg,rgb(250, 122, 229), rgb(244, 244, 134));
+    font-family: 'Dancing Script', cursive;
+    font-family: 'Manrope', sans-serif;
+    text-align: center;
+    font-size: 150%;
+    color: #D96F66; 
+}
+
+.Footer{
+    grid-area: Footer;
+    background-color: #D96F66;
+    text-align: center;
+}
+
+h2{
+    font-family: 'Dancing Script', cursive;
+    font-family: 'Manrope', sans-serif;
+    text-align: center;
+    color: #D96F66; 
+}
+
+a:visited,a:active,a:link{
+    color:#fccabd;
+    text-decoration: none; 
+}
+
+h3,h4,.NuestrasRedes{
+    font-family: 'Dancing Script', cursive;
+    font-family: 'Manrope', sans-serif;
+    text-align:center;
+    color:#fccabd; 
+    margin: 10px 0px;
+}
+
+.Mail:visited,.Mail:active,.Mail:link,.IG:visited,.IG:active,.IG:link{
+    font-family: 'Dancing Script', cursive;
+    font-family: 'Manrope', sans-serif;
+    text-align:left;
+    color:#fccabd; 
+    text-decoration: none;
+}
+
+iframe{
+    width: 100%;
+}
+
+.form-pseudoclases *:required{
+border-color: #F2D7D0;
+}
+html{background-color:rgb(255, 255, 255);}
+
+ 
+
+
